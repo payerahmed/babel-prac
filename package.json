@@ -1,0 +1,12 @@
+{
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6"
+  },
+  "scripts": {
+    "build": "rm -rf dist && mkdir dist && babel one.js -o dist/one.js && babel two.js -o dist/two.js",
+    "start": "yarn build && node dist/two.js"
+  }
+}
